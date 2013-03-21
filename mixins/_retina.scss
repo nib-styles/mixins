@@ -1,0 +1,20 @@
+@mixin retina-background-image($image, $ext, $width:false, $height:false) {
+
+  @if ($width == false) {
+    $width: $height
+  }
+
+  .no-retina &,
+  .no-js & {
+    background-image: url("#{$image}.#{$ext}");
+  }
+
+  .retina & {
+    background-image: url("#{$image}@2x.#{$ext}");
+    background-size:100%;
+    
+    @if ($width and $height){
+      background-size:unquote($width) unquote($height);
+    } 
+  }
+}

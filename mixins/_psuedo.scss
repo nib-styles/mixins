@@ -1,0 +1,15 @@
+@mixin after {
+  &:after {
+    display: block;
+    content: '';
+    @content;
+  }
+}
+
+@mixin before {
+  &:before {
+    display: block;
+    content: '';
+    @content;
+  }
+}

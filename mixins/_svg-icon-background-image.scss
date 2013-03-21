@@ -1,0 +1,4 @@
+@mixin svg-icon-background-image($image) {
+  background: icon-url("#{$image}.png");
+  background: none, icon-url("#{$image}.svg");
+}

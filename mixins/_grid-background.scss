@@ -1,0 +1,23 @@
+@mixin grid-background($column-color: rgba(255,0,0,0.2), $baseline-color: rgba(0,0,0,0.3)) {
+	background: 
+		// Baseline
+		-webkit-linear-gradient(top, $baseline-color 1px, transparent 1px),
+		// Grid
+		-webkit-linear-gradient(left, $column-color 0, $column-color $grid-column-width, transparent $grid-column-width)
+	;
+	background-size: $grid-baseline $grid-baseline, ($grid-column-width + $grid-gutter-width) $grid-baseline;
+	background-position: 0 ($grid-baseline - 1);
+}
+
+.show-grid {
+	position: relative;
+	&:before {
+		@include grid-background;
+		display: block;
+		content: '';
+		position:absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 1000;
+	}
+}
