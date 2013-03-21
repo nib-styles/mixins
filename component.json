@@ -13,6 +13,6 @@
     "mixins/_retina.scss",
     "mixins/_stretch.scss",
     "mixins/_svg-icon-background-image.scss",
-    "mixins/_user-select.scss",
+    "mixins/_user-select.scss"
   ]
 }
