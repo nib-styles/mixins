@@ -5,11 +5,10 @@
   "version": "0.1.0",
   "dependencies": {},
   "files": [
-    "index.scss",
     "mixins/_border-box.scss",
     "mixins/_gradients.scss",
     "mixins/_grid-background.scss",
-    "mixins/_pseudo.scss",
+    "mixins/_psuedo.scss",
     "mixins/_retina.scss",
     "mixins/_stretch.scss",
     "mixins/_svg-icon-background-image.scss",
