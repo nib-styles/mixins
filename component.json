@@ -4,6 +4,7 @@
   "main": "index.scss",
   "version": "0.1.0",
   "dependencies": {},
+  "styles": ["index.scss"],
   "files": [
     "mixins/_border-box.scss",
     "mixins/_gradients.scss",
