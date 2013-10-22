@@ -1,11 +1,8 @@
 {
-  "name": "common",
-  "descriptions": "Common styles used across all sites.",
-  "main": "index.scss",
-  "version": "0.1.0",
-  "dependencies": {},
-  "styles": ["index.scss"],
+  "name": "mixins",
+  "version": "0.2.0",
   "files": [
+    "index.scss",
     "mixins/_border-box.scss",
     "mixins/_gradients.scss",
     "mixins/_grid-background.scss",
